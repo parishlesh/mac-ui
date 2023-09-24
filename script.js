@@ -5,8 +5,8 @@ const batteryLevel = document.getElementById('level');
 if ('getBattery' in navigator) {
   navigator.getBattery().then(batt => {
     const setBatteryLevel = () => {
-      const level = batt.level * 100;
-      batteryLevel.innerText = level;
+      const level =Math.floor( batt.level * 100);
+      batteryLevel.innerText =level;
     };
 
     setBatteryLevel();
