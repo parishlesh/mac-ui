@@ -7,16 +7,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href=
+    "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
     <title>mac login</title>
 </head>
 <body>
     <main>
         <nav>
-            <div class="battery">
+            <div class="battery_wifi">
                 <span id ="level"></span>
-
-                <img src="" alt="batteryicon">
-                <img src="" alt="wifiicon">
+                <p>%</p>
+                <div class="icons">
+                    <i class="bi bi-battery-full text-md"></i>
+                    <i class="bi bi-wifi text-xl"></i>
+                </div>
             </div>
             <div id="date">
                 todays date
@@ -29,23 +34,25 @@
                 <h3>Parishlesh</h3>
                 <input type="password" placeholder="Enter password">
             </section>
-                <div class="action">
-                    <button class="user_login">
-                        <img src="./icons/system_shutdown_icon_181210.svg" alt="">
-                        <span>Shutdown</span>
-                    </button>
-                    <button class="user_login" style="display:flex; align-items:center; padding-right:40px;">
-                        <img src="./icons/restart-button.svg" alt="" style="height: 30px;">
-                        <span>Restart</span>
-                    </button>
-                    <button class="user_login">
-                        <img src="./icons/sleep_icon_213985.svg" alt="">
-                        <span>Sleep</span>
-                    </button>
-                </div>
+            <div class="action">
+                <button class="user_login">
+                    <img src="./icons/system_shutdown_icon_181210.svg" alt="">
+                    <span>Shutdown</span>
+                </button>
+                <button class="user_login" style="display:flex; align-items:center; padding-right:40px;">
+                    <img src="./icons/restart-button.svg" alt="" style="height: 30px;">
+                    <span>Restart</span>
+                </button>
+                <button class="user_login">
+                    <img src="./icons/sleep_icon_213985.svg" alt="">
+                    <span>Sleep</span>
+                </button>
+            </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" integrity="sha512-CryKbMe7sjSCDPl18jtJI5DR5jtkUWxPXWaLCst6QjH8wxDexfRJic2WRmRXmstr2Y8SxDDWuBO6CQC6IE4KTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
+  
 </body>
 </html>
