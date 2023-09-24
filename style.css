@@ -48,10 +48,27 @@ input{
   font-size: 14px;
   color: rgba(255, 255, 255, 0.834);
   background-color: rgba(183, 178, 191, 0.686);
-  height: 18px;
+  height: 23px;
+  width: 190px;
 }
 
 input::placeholder{
   color: antiquewhite;
   font-weight: 500 ;
 }
+
+.user_login{
+  mix-blend-mode: multiply;
+  padding-top: 5px;
+  border: none;
+  border-radius: 100px;
+  backdrop-filter: blur(1px);
+}
+
+.user_login:hover{
+  transform: scale(1.15);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
