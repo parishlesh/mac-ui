@@ -58,11 +58,13 @@ input::placeholder{
 }
 
 .user_login{
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
   padding-top: 5px;
   border: none;
   border-radius: 100px;
   backdrop-filter: blur(1px);
+  height: 30px;
+  width: 30px;
 }
 
 .user_login:hover{
@@ -71,4 +73,8 @@ input::placeholder{
   cursor: pointer;
 }
 
-
+.action{
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-end; */
+}
