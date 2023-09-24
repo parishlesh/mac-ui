@@ -59,22 +59,45 @@ input::placeholder{
 
 .user_login{
   /* mix-blend-mode: multiply; */
+  background-color: #f1f1f1;
   padding-top: 5px;
-  border: none;
+  border: 1px solid #ccc;
   border-radius: 100px;
   backdrop-filter: blur(1px);
   height: 30px;
   width: 30px;
+  padding: 10px;
+  margin: 10px;
+  transition: all 0.3s;
+  transform-origin: center;
+}
+
+.user_login img {
+  width: 30px;
+  height: 30px;
 }
 
 .user_login:hover{
   transform: scale(1.15);
   transition: 0.3s;
   cursor: pointer;
+  background-color: #ddd;
 }
 
-.action{
+.user_login span {
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.action {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   display: flex;
   justify-content: center;
-  /* align-items: flex-end; */
+  align-items: center;
 }

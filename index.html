@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -10,7 +13,7 @@
     <main>
         <nav>
             <div class="battery">
-                <span class ="level"></span>
+                <span id ="level"></span>
 
                 <img src="" alt="batteryicon">
                 <img src="" alt="wifiicon">
@@ -27,9 +30,18 @@
                 <input type="password" placeholder="Enter password">
             </section>
                 <div class="action">
-                    <button class="user_login"><img src="./icons/system_shutdown_icon_181210.svg" alt=""></button>
-                    <button class="user_login" style="display:flex; align-items:center; padding-right:40px;"><img src="./icons/restart-button.svg" alt="" style="height: 30px;"></button>
-                    <button class="user_login"><img src="./icons/sleep_icon_213985.svg" alt=""></button>
+                    <button class="user_login">
+                        <img src="./icons/system_shutdown_icon_181210.svg" alt="">
+                        <span>Shutdown</span>
+                    </button>
+                    <button class="user_login" style="display:flex; align-items:center; padding-right:40px;">
+                        <img src="./icons/restart-button.svg" alt="" style="height: 30px;">
+                        <span>Restart</span>
+                    </button>
+                    <button class="user_login">
+                        <img src="./icons/sleep_icon_213985.svg" alt="">
+                        <span>Sleep</span>
+                    </button>
                 </div>
         </div>
     </main>
