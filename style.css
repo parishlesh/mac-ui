@@ -8,6 +8,7 @@ body, html{
 
 main{
   background: url(./images/746406.jpg);
+  /* background-color: green; */
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -24,6 +25,7 @@ nav{
   justify-content: space-between;
   top: 4px;
   right: 4px;
+  color: white;
 }
 .profile{
   background: url(./images/5400.jpg);
@@ -39,6 +41,11 @@ section{
   justify-content: center;
   height: 50%;
   flex-direction: column;
+  color: white;
+  /* padding: 16px; */
+}
+h3{
+  padding: 16px;
 }
 
 input{
@@ -93,11 +100,41 @@ input::placeholder{
 
 .action {
   position: fixed;
-  bottom: 20px;
+  bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+
+.battery_wifi{
+  display: flex;
+  margin: auto;
+}
+
+p {
+    margin: 2px;
+    margin-right: 5px;
+    margin-left: -4px;
+}
+
+.bi-wifi::before {
+  content: "\f61c";
+  font-size: 18px;
+}
+
+.bi-battery-full::before {
+  content: "\f186";
+  font-size: 18px;
+}
+.icons{
+  margin-top: 2px;
+}
+
+.battery_wifi span{
+  margin-right: 7px;
+  font-size: 16px;
 }
