@@ -4,18 +4,19 @@ body, html{
   height: 100%;
   width: 100%;
   color: white;
+  background-image: url(./images/746406.jpg);
+  background-size: cover;
 }
 
 main{
-  background: url(./images/746406.jpg);
-  /* background-color: green; */
-  background-size: cover;
-  background-position: center;
+  backdrop-filter: blur(10px);
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: +10;
+  
 }
 
 nav{
@@ -26,6 +27,8 @@ nav{
   top: 4px;
   right: 4px;
   color: white;
+  background-color: ;
+  /* backdrop-filter: blur(10px); */
 }
 .profile{
   background: url(./images/5400.jpg);
@@ -38,14 +41,17 @@ nav{
 section{
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 50%;
+  /* justify-content: center; */
+  /* bottom: 50px; */
   flex-direction: column;
-  color: white;
-  /* padding: 16px; */
+  height: 50%;
+  color: aliceblue;
+  margin-bottom: 9%;
 }
+
 h3{
   padding: 16px;
+  color: aliceblue;
 }
 
 input{
@@ -65,15 +71,11 @@ input::placeholder{
 }
 
 .user_login{
-  /* mix-blend-mode: multiply; */
-  background-color: #f1f1f1;
-  padding-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 100px;
-  backdrop-filter: blur(1px);
-  height: 30px;
-  width: 30px;
+  background-color: transparent;
   padding: 10px;
+  border: 5px;
+  border-radius: 100px;
+  backdrop-filter: blur(10px);
   margin: 10px;
   transition: all 0.3s;
   transform-origin: center;
@@ -85,10 +87,10 @@ input::placeholder{
 }
 
 .user_login:hover{
-  transform: scale(1.15);
+  transform: scale(1.35);
   transition: 0.3s;
   cursor: pointer;
-  background-color: #ddd;
+  background-color: transparent;
 }
 
 .user_login span {
@@ -96,18 +98,19 @@ input::placeholder{
   display: block;
   margin-top: 5px;
   font-size: 12px;
+  color: #f1f1f1;
+  
 }
 
 .action {
   position: fixed;
-  bottom: 100px;
+  bottom: 8%;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
+  width: 30%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  
 }
 
 .battery_wifi{
@@ -115,10 +118,10 @@ input::placeholder{
   margin: auto;
 }
 
-p {
-    margin: 2px;
-    margin-right: 5px;
-    margin-left: -4px;
+p{
+  margin: 2px;
+  margin-right: 5px;
+  margin-left: -4px;
 }
 
 .bi-wifi::before {
@@ -141,4 +144,27 @@ p {
 
 #date{
   margin-right: 15px;
+}
+
+
+.bi-play::before {
+  content: "\f4f5";
+  font-size: x-large;
+  transform: rotate(180deg);
+  padding-left: 1px;
+  color: #f1f1f1;
+}
+
+
+.bi-power::before {
+  content: "\f4ff";
+  font-size: x-large;
+  color:aliceblue;
+}
+
+.spanandicon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
