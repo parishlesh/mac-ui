@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function() {
+
 const myDate = document.getElementById('date');
 const batteryLevel = document.getElementById('level');
 
@@ -23,27 +25,20 @@ setInterval(() => {
   myDate.innerHTML = moment().format('ddd, DD MMM, HH:mm');
 }, 300);
 
-    // const myDate = document.getElementById('date')
-    // const batteryLevel = document.getElementById('level')
-    
-    
-    // myDate.innerHTML = moment().format("ddd, dd MMM, HH:mm");
-    
-    // navigator.getBattery().then (batt=> {
-    //     const setBtteryLevel = ()=>{
-    //         const level= batt.level*100;
-    
-    //         batteryLevel.innerText =level;
-    //     }
-    //     setBtteryLevel();
-    //     batt.ondischargingtimechange = ()=>{
-    //         setBtteryLevel();
-    //     };
-    //     batt.onchargingchange = ()=>{
-    //         setBtteryLevel();
-    //     };
-    // })
-    
-    // setInterval(() => {
-    //     myDate.innerHTML = moment().format("ddd, dd MMM, HH:mm");
-    // }, 300);
+document.getElementById("loginform").addEventListener("submit", function(event){
+  event.preventDefault();
+  console.log("submit button clicked");
+
+  const password = document.getElementById("password").value;
+  console.log("password:", password);
+
+  if (password=== "parishlesh"){
+    window.location.href= "/homepage/homepage.html";
+
+  }
+  else{
+    alert("wrong password")
+  }
+});
+
+});
