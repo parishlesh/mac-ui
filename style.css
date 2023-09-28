@@ -190,3 +190,9 @@ p{
   cursor: pointer;
   background-color: transparent;
 }
+
+#loginform{
+  display: flex;
+  align-items: center;  
+  margin-right: -34px;
+}
