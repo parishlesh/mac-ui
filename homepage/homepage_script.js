@@ -22,3 +22,13 @@ if ('getBattery' in navigator) {
 setInterval(() => {
   myDate.innerHTML = moment().format('ddd, DD MMM, HH:mm');
 }, 300);
+
+document.addEventListener("DOMContentLoaded", function() {
+  const dock = document.querySelectorAll('.dock');
+  const dockItems = document.querySelectorAll(".dock-items");
+
+  const dockWidth = dockItems.length;
+  
+  dock.style.width= `${dockWidth}px`;
+  console.log("working?")
+});
