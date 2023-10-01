@@ -124,14 +124,15 @@ body, html{
 .dock{
   display: flex;
   justify-content: center;
-  bottom: 0;
+  bottom: 10px;
   position: fixed;
   right: 0;
   left: 0;
-  height: 80px;
+  height: 75px;
   border-radius: 8px;
   backdrop-filter: blur(21px);
   background: transparent;
+  box-shadow:  2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .dock-item {
@@ -142,6 +143,7 @@ body, html{
     transition: transform 0.2s;
     align-items: center;
     justify-content: center;
+    width: calc(100% / var(--num-items));
 }
 
 .dock-item:hover {
@@ -157,4 +159,11 @@ body, html{
 span {
     display: block;
     color: whitesmoke;
+    font-size: 12px;
 }
+
+/* .dockHr{
+  color: aliceblue;
+  transform: rotate(180deg);
+  size: px;
+} */
