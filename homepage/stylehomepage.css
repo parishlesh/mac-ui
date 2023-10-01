@@ -3,7 +3,6 @@ body, html{
     padding: 0;
     height: 100%;
     width: 100%;
-    /* color: white; */
     background-image: url(./images/746406.jpg);
     background-size: cover;
     position: fixed;
@@ -53,17 +52,16 @@ body, html{
   position: absolute;
   min-width: 120px;
   z-index: 1;
-    /* Apply blur and background to the dropdown content */
-  backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
-  background-color: rgba(255, 0, 0, 0.8); /* Adjust the background color and opacity as needed */
-  border-radius: 5px; /* Optional: Add rounded corners for a more macOS-like look */
-  /* padding: 10px; Optional: Add padding to the dropdown content */
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 0, 0, 0.8);
+  border-radius: 5px;
+  
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-    backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
-    background-color: #b7c1be9b; /* Adjust the background color and opacity as needed */
+    backdrop-filter: blur(10px);
+    background-color: #b7c1be9b;
 }
 
 .dropdown-content a {
@@ -123,13 +121,40 @@ body, html{
     display: flex;
   }
 
-  /* nav{
-    display: flex;
-    width: 250px;
-    position: absolute;
-    justify-content: space-between;
-    top: 4px;
-    right: 4px;
-    color: white;
-    background-color: ;
-  } */
+.dock{
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  height: 80px;
+  border-radius: 8px;
+  backdrop-filter: blur(21px);
+  background: transparent;
+}
+
+.dock-item {
+    text-align: center;
+    margin: 7px;
+    color: rgb(39, 3, 3);
+    cursor: pointer;
+    transition: transform 0.2s;
+    align-items: center;
+    justify-content: center;
+}
+
+.dock-item:hover {
+    transform: scale(1.2);
+}
+
+.dock-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+span {
+    display: block;
+    color: whitesmoke;
+}
