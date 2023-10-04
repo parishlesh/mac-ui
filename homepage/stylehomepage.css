@@ -128,7 +128,9 @@ body, html{
   position: fixed;
   right: 0;
   left: 0;
+  margin: auto;
   height: 75px;
+  width: fit-content;
   border-radius: 8px;
   backdrop-filter: blur(21px);
   background: transparent;
