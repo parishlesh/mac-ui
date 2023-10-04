@@ -29,17 +29,17 @@ setInterval(() => {
 const dockContainer = document.querySelector('.dock');
 const dockItems = document.querySelectorAll(".dock-item");
 
-const updateDockSize = () => {
-  const numItems= dockItems.length;
-  const itemWidthPercent = 100/ numItems;
+// const updateDockSize = () => {
+//   const numItems= dockItems.length;
+//   const itemWidthPercent = 100/ numItems;
 
-  dockItems.forEach(item => {
-    item.style.width = `0 0 (${itemWidthPercent}%)`;
-  });
+//   dockItems.forEach(item => {
+//     item.style.width = `0 0 (${itemWidthPercent}%)`;
+//   });
 
-  // dockContainer.style.width = `${numItems * itemWidthPercent}%`;
-  dockContainer.style.width = `100%`;
-};
+//   // dockContainer.style.width = `${numItems * itemWidthPercent}%`;
+//   dockContainer.style.width = `100%`;
+// };
 
   updateDockSize();
   window.addEventListener('resize', updateDockSize);
