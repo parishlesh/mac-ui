@@ -41,8 +41,8 @@ const dockItems = document.querySelectorAll(".dock-item");
 //   dockContainer.style.width = `100%`;
 // };
 
-  updateDockSize();
-  window.addEventListener('resize', updateDockSize);
-  console.log("working?");
+  // updateDockSize();
+  // window.addEventListener('resize', updateDockSize);
+  // console.log("working?");
 
 });
