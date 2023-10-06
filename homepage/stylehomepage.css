@@ -52,7 +52,7 @@ body, html{
   position: absolute;
   min-width: 120px;
   z-index: 1;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   background-color: rgba(255, 0, 0, 0.8);
   border-radius: 5px;
   
@@ -61,7 +61,7 @@ body, html{
 .dropdown:hover .dropdown-content {
     display: block;
     backdrop-filter: blur(10px);
-    background-color: #b7c1be9b;
+    background-color: #4343439b;
 }
 
 .dropdown-content a {
@@ -74,7 +74,7 @@ body, html{
 
 .dropdown-content a:hover {
     border-radius: 5px;
-    background-color: rgb(163, 162, 162);
+    background-color: rgb(56, 56, 56);
     color: aliceblue;
     /* padding:100px; */
 }
@@ -163,9 +163,3 @@ span {
     color: whitesmoke;
     font-size: 12px;
 }
-
-/* .dockHr{
-  color: aliceblue;
-  transform: rotate(180deg);
-  size: px;
-} */
