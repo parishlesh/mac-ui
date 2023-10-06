@@ -163,3 +163,48 @@ span {
     color: whitesmoke;
     font-size: 12px;
 }
+
+
+#desktop {
+  width: 100%;
+  height: 100vh;
+  /* background-color: #f0f0f0; */
+}
+
+#rightClickOption {
+  display: none;
+  position: absolute;
+  min-width: 120px;
+  z-index: 1;
+  border-radius: 5px;
+  top: 183px;
+  left: 773px;
+  background: transparent;
+  backdrop-filter: blur(120px);
+  
+}
+
+#rightClickOption ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+#rightClickOption li {
+  padding: 8px 16px;
+  margin: auto;
+  cursor: pointer;
+  color:aliceblue;
+  padding: 5px;
+  font-size: 16px;
+
+}
+
+#rightClickOption li:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  background-color: rgb(73, 71, 71);
+  transition: all 0.3s;
+  margin: auto;
+}
